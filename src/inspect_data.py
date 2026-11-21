@@ -1,5 +1,7 @@
 
 import pandas as pd
+from pathlib import Path
+
 
 # Load the original survey
 url = (
@@ -8,7 +10,10 @@ url = (
     "coffee_survey.csv"
 )
 
-df = pd.read_csv(url)
+project_root = Path(__file__).resolve().parent.parent
+data_path = project_root / "data" / "raw" / "coffee_survey.csv"
+
+df = pd.read_csv(data_path)
 
 # Our target and candidate features
 columns = ["roast_level", "brew", "strength", "style", "cups"]
