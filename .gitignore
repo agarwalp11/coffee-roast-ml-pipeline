@@ -1,14 +1,18 @@
 # Virtual environment
 .venv/
-venv/
 
 # Python cache
 __pycache__/
 *.pyc
 
-# Environment variables and secrets
+# Credentials and environment variables
 .env
 .env.*
+*credentials*.json
+service-account*.json
+
+# Downloaded data (recreated by pipeline)
+data/processed/coffee_downloaded.csv
 
 # Mac system files
-.DS_Store
+.DS_Store 
