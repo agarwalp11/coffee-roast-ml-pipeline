@@ -10,9 +10,14 @@ __pycache__/
 .env.*
 *credentials*.json
 service-account*.json
+*.json
 
 # Downloaded data (recreated by pipeline)
 data/processed/coffee_downloaded.csv
 
 # Mac system files
 .DS_Store 
+
+# MLflow local tracking data
+mlruns/
+
