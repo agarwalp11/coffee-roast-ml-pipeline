@@ -310,3 +310,12 @@ coffee-roast-ml-pipeline/
 - **Survey-based predictions:** Results reflect patterns in a specific survey, not objective recommendations or guaranteed personal preferences. This survey was collected by a what most likley would be from coffee enthusiasts 
 - **Operational improvements:** Add automated tests, continuous integration, and deployment configuration for a more production-ready pipeline.
 
+## Ethical Considerations and Limitations
+
+Although this is a low-risk application, there are some important considerations:
+
+- **Data Privacy:** The model uses public survey data and does not require personal information.
+- **Dataset Bias:** Survey participants may not represent all coffee drinkers, which could affect prediction accuracy.
+- **Class Imbalance:** Dark roast is underrepresented in the dataset, making predictions for this category less reliable.
+- **Model Limitations:** The model uses only four features, so predictions should be treated as suggestions rather than definitive results.
+
